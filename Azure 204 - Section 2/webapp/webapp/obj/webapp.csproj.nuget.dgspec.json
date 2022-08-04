@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj": {}
+    "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj": {}
   },
   "projects": {
-    "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj": {
+    "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj",
+        "projectUniqueName": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj",
         "projectName": "webapp",
-        "projectPath": "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj",
+        "projectPath": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 2\\webapp\\webapp\\webapp.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 2\\webapp\\webapp\\obj\\",
+        "outputPath": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 2\\webapp\\webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
