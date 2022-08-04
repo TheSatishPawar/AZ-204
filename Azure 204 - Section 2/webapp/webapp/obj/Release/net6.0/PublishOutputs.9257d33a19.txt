@@ -1,7 +1,0 @@
-E:\Working Projects\Azure\Azure 204 - Section 2\webapp\webapp\obj\Release\net6.0\PubTmp\Out\webapp.exe
-E:\Working Projects\Azure\Azure 204 - Section 2\webapp\webapp\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
-E:\Working Projects\Azure\Azure 204 - Section 2\webapp\webapp\obj\Release\net6.0\PubTmp\Out\appsettings.json
-E:\Working Projects\Azure\Azure 204 - Section 2\webapp\webapp\obj\Release\net6.0\PubTmp\Out\webapp.dll
-E:\Working Projects\Azure\Azure 204 - Section 2\webapp\webapp\obj\Release\net6.0\PubTmp\Out\webapp.deps.json
-E:\Working Projects\Azure\Azure 204 - Section 2\webapp\webapp\obj\Release\net6.0\PubTmp\Out\webapp.runtimeconfig.json
-E:\Working Projects\Azure\Azure 204 - Section 2\webapp\webapp\obj\Release\net6.0\PubTmp\Out\webapp.pdb
