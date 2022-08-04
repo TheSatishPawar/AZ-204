@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="callappfuctionfromwebapp" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Working\ Projects\\Azure\\Azure\ 204\\Azure\ 204\ -\ Section\ 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
