@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "azt3eKJQ0VgboMVAw5JX6ivvwEEI85IQl3lSSeRbVBw0wFTnye5pxYKiygWFV/vBG+EcpCxEFjAq+CiuzTjBzQ==",
+  "dgSpecHash": "GJPii8O+Q2IrQ7DCuqbgHLkaZLbhMOY2Nl2ZmDf7e+NAbfKrATMWriwkr8CStLYIy4/fY6AP4uiipAsSVocOqw==",
   "success": true,
-  "projectFilePath": "E:\\Working Projects\\Azure\\Azure 204 - Section 3\\sqlappwithappconfigurationsettings\\sqlappwithappconfigurationsettings\\sqlappwithappconfigurationsettings.csproj",
+  "projectFilePath": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 3\\sqlappwithappconfigurationsettings\\sqlappwithappconfigurationsettings\\sqlappwithappconfigurationsettings.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.data.appconfiguration\\1.2.0\\azure.data.appconfiguration.1.2.0.nupkg.sha512",
