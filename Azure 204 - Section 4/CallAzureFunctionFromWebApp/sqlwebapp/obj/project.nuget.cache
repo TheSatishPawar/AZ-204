@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TIyqEo8R7YoMrLvAsUqeLC7sioeBiQ/HPMssslrm51RsD9klOoSzyeDvna2TK4n0zaJZzlNQWwe2PQFrBO0VKg==",
+  "dgSpecHash": "N9ffqIL2eJFPgUZDlv7SJI3E1jxSfp6LhW8w7S1BJ9b1SxOGnp2Fq5TLOHCX/N4gUQI7TLbCnoJQIQG2fo7P5Q==",
   "success": true,
-  "projectFilePath": "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj",
+  "projectFilePath": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

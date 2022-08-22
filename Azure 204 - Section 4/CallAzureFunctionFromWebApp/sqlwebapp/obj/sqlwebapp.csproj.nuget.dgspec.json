@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj": {}
+    "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj": {}
   },
   "projects": {
-    "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj": {
+    "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj",
+        "projectUniqueName": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj",
         "projectName": "sqlwebapp",
-        "projectPath": "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj",
+        "projectPath": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\sqlwebapp.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "E:\\Working Projects\\Azure\\Azure 204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\obj\\",
+        "outputPath": "E:\\Working Projects\\Azure\\Azure 204\\AZ-204\\Azure 204 - Section 4\\CallAzureFunctionFromWebApp\\sqlwebapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
