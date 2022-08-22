@@ -2,8 +2,8 @@
 using Microsoft.Azure.Cosmos;
 using Newtonsoft.Json;
 
-string cosmosDbEndpointUri = "https://sspcosmosdbtest.documents.azure.com:443/";
-string cosmosDbKey = "WUbar3IwsJcMlAaHJMq8RFCORCYaPTcrY3lMOcQBZ48QsI912BCzjt394rX0gkIwOG084xQ7Ozan6zkcUMqlLw==";
+string cosmosDbEndpointUri = "--End Point--";
+string cosmosDbKey = "--Key--";
 string databaseName = "cosmosdbrnd";
 string containerName = "cosmosdb";
 string partitonKey = "/CustomerName";
