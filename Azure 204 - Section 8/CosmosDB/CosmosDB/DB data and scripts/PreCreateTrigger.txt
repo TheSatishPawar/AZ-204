@@ -1,0 +1,12 @@
+﻿function validateItem(){
+    var context = getContext();
+    var request = context.getRequest();
+    var item = request.getBody();
+    
+    if(!("Quantity" in item)){
+    item["Quantity"] =0;
+    }
+    
+    request.setBody(item);
+    
+}

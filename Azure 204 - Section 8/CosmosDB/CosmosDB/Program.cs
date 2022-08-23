@@ -4,9 +4,16 @@ using Newtonsoft.Json;
 
 string cosmosDbEndpointUri = "--End Point--";
 string cosmosDbKey = "--Key--";
+
+
 string databaseName = "cosmosdbrnd";
 string containerName = "cosmosdb";
 string partitonKey = "/CustomerName";
+
+
+// used for feed processor to track item changes in cosmosdb container
+ string monitoredContainerName = "cosmosdb";
+ string leaseContainerName = "leases";
 
 //await CreateDatabase(databaseName);
 
@@ -44,9 +51,17 @@ string partitonKey = "/CustomerName";
 //    });
 
 // Read item arrays
-await ReadArrayItems();
+//await ReadArrayItems();
 
 
+//await CallStoredProcedure();
+
+
+////create item to run create trigger - if quantity is not in item then set as quantity =0 in trigger
+//await CreateItem();
+
+//// Calling change feed processor to trak changes in cosmosdb container
+await CallChangeFeedProcessor();
 
 
 async Task CreateDatabase(string databaseName)
@@ -228,13 +243,70 @@ async Task ReadArrayItems()
             Console.WriteLine("CustomerName {0}", item.CustomerName);
             Console.WriteLine("CustomerCity {0}", item.CustomerCity);
 
-            foreach(var order in item.Orders)
+            foreach (var order in item.Orders)
             {
                 Console.WriteLine("Order ID {0}", order.id);
                 Console.WriteLine("Category {0}", order.Category);
                 Console.WriteLine("Quantity {0}", order.Quantity);
             }
-            
+
         }
     }
+}
+
+async Task CallStoredProcedure()
+{
+    CosmosClient cosmosClient = new CosmosClient(cosmosDbEndpointUri, cosmosDbKey);
+    Container container = cosmosClient.GetContainer(databaseName, containerName);
+
+    dynamic[] orderItems = new dynamic[]
+    {
+        new {id=Guid.NewGuid().ToString(),
+        OrderId="O1",
+        Category="Laptop",
+        Quantity=100,
+        CustomerName ="C1"},
+        new {id=Guid.NewGuid().ToString(),
+        OrderId="O2",
+        Category="Mobile",
+        Quantity=150,
+        CustomerName ="C1"},
+        new {id=Guid.NewGuid().ToString(),
+        OrderId="O3",
+        Category="Laptop",
+        Quantity=75,
+        CustomerName ="C1"}
+    };
+
+    var result = await container.Scripts.ExecuteStoredProcedureAsync<string>("createitems", new PartitionKey("C1"), new[] { orderItems });
+
+    Console.WriteLine(result);
+}
+
+
+async Task CreateItem()
+{
+    CosmosClient cosmosClient = new CosmosClient(cosmosDbEndpointUri, cosmosDbKey);
+    Container container = cosmosClient.GetContainer(databaseName, containerName);
+
+    dynamic orderItem =
+        new
+        {
+            id = Guid.NewGuid().ToString(),
+            OrderId = "O1",
+            Category = "Laptop",
+            CustomerName = "C1"
+        };
+
+
+    await container.CreateItemAsync(orderItem, null, new ItemRequestOptions { PreTriggers = new List<string> { "validateItem" } });
+
+    Console.WriteLine("Item inserted");
+}
+
+
+async Task CallChangeFeedProcessor()
+{
+    var changeFeedProcessor = new ChangeFeedProcessorForLease(cosmosDbEndpointUri, cosmosDbKey, databaseName, containerName, monitoredContainerName, leaseContainerName);
+    await changeFeedProcessor.StartChangeProcessor();
 }

@@ -13,5 +13,6 @@ namespace CosmosDB
         public string Category { get; set; }
         public string CustomerName { get; set; }
         public int Quantity { get; set; }
+        public DateTime creationTime { get; set; }
     }
 }
