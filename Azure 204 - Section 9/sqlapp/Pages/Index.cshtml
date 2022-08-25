@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">List Of Products With GIT HUB Sync</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Product ID</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Quanity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Products)
+            {
+                <tr>
+                    <td scope="row">@item.ProductID</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.Quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
