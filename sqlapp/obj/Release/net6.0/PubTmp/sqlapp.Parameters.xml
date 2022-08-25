@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="sspwebapp1" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Working\ Projects\\Azure\\Azure\ 204\ -\ Section\ 3\\sqlapp\\sqlapp\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>
